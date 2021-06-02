@@ -3,7 +3,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
-- main
+- master
 
 resources:
 - repo: self
@@ -26,5 +26,3 @@ stages:
         repository: 'mohamadlawand/sampleapi'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
-        tags: |
-          $(tag)
