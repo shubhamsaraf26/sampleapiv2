@@ -21,7 +21,8 @@ namespace SampleApi.Controllers
                 "Jeep",
                 "Honda",
                 "Ferrari", 
-                "Lambo"
+                "Lambo",
+                "Renault"
             };
            return Ok(persons);
         }
