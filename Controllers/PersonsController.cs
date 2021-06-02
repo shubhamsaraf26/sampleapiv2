@@ -15,7 +15,12 @@ namespace SampleApi.Controllers
                 "Mickey",
                 "Batman",
                 "Thor",
-                "Tony Stark"
+                "Tony Stark",
+                "Mercedes",
+                "BMW",
+                "Jeep",
+                "Honda",
+                "Ferrari"
             };
            return Ok(persons);
         }
