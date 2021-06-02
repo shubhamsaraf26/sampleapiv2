@@ -25,6 +25,11 @@ terraform {
   }
 }
 
+variable "imagebuild" {
+  type = string
+  description = "the lastest build version"
+}
+
 # we are creating resource group in azure
 # the name on line 21 is not reflecred on azure rather it is used in terraform
 resource "azurerm_resource_group" "tf_rg_sampleapi" {
@@ -44,7 +49,7 @@ resource "azurerm_container_group" "tf_cg_sampleapi" {
 
   container {
     name = "sampleapi"
-    image = "mohamadlawand/sampleapi"
+    image = "mohamadlawand/sampleapi:${var.imagebuild}"
     cpu = "1"
     memory = "1"
 
