@@ -38,7 +38,7 @@ stages:
     pool:
       vmimage: ubuntu-latest
     variables:
-    - group: SampleApiVariable
+    - group: TF_Sample_Lib
     steps:
       - script: |
           set -e
