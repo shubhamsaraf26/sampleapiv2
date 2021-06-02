@@ -20,7 +20,8 @@ namespace SampleApi.Controllers
                 "BMW",
                 "Jeep",
                 "Honda",
-                "Ferrari"
+                "Ferrari", 
+                "Lambo"
             };
            return Ok(persons);
         }
