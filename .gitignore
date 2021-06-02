@@ -5,6 +5,8 @@
 project.lock.json
 .DS_Store
 *.pyc
+terraform.tfstate
+terraform.tfstate.backup
 
 # Visual Studio Code
 .vscode

@@ -16,6 +16,15 @@ provider "azurerm" {
     }
 }
 
+terraform {
+  backend "azurerm" {
+    resource_group_name = "rg_st_tf"
+    storage_account_name = "tfstorageforstate"
+    container_name = "tfdata"
+    key = "terraform.tfstate"
+  }
+}
+
 # we are creating resource group in azure
 # the name on line 21 is not reflecred on azure rather it is used in terraform
 resource "azurerm_resource_group" "tf_rg_sampleapi" {
